@@ -1,0 +1,2 @@
+name="Swapnil"
+print(name)
