@@ -1,0 +1,1 @@
+b = copy.deepcopy(a)
