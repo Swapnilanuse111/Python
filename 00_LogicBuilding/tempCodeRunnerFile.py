@@ -1,1 +1,1 @@
-num=num//10
+print(i,"The Number Is Even No")
