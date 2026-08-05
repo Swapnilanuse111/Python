@@ -13,4 +13,3 @@ Car1=Car("Tata","Punch",20000)
 print(Car1.c_brand)
 Car2=Car("Mahindra","TAta",2187218)
 print(Car2.c_price)
-        
