@@ -9,7 +9,7 @@ class ATM:
         self.c_ac_no = c_ac_no
         self.c_bal = c_bal
 
-    # Check Balance
+    # Check Balanc
     def ch_bal(self):
         return self.c_bal
 
