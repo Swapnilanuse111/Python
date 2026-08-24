@@ -15,9 +15,9 @@ class ATM:
     def Withdrow(self):
         self.Withdrow=int(input("Enter The Amoount How Manny Withdrow:-"))
         if self.Withdrow<self.c_bal:
-            self.Withdrow=self.c_bal-self.Withdrow
+            self.c_bal=self.c_bal-self.Withdrow
             print("Your Money Withdrow Sucessfully")
-            print("Avalable Balance is:-",self.Withdrow)
+            print("Avalable Balance is:-",self.c_bal)
         else:
             print("In Youre Bank Account There Is No Suficent Balance")
 obj=ATM()
