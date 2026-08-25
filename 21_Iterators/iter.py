@@ -1,0 +1,12 @@
+'''
+    Iterator-Iterator 
+'''
+assert 
+l=[10,20,30,40,50]
+iter_var=iter(l)
+print(next(iter_var))
+print(next(iter_var))
+print(next(iter_var))
+print(next(iter_var))
+print(next(iter_var))
+print(next(iter_var))
