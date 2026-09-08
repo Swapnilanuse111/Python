@@ -1,0 +1,163 @@
+#A Regurlar Expresssion Is A Special Sequence of character which is used in order to find,search,extract or replace text or string
+
+'''
+============================================================
+              REGULAR EXPRESSION (REGEX) NOTES
+============================================================
+
+1. BASIC REGEX SYMBOLS
+------------------------------------------------------------
+
+Pattern     Name                 Meaning
+------------------------------------------------------------
+.           Dot                  Any single character
+^           Caret                Starts with
+$           Dollar               Ends with
+*           Star                 0 or more times
++           Plus                 1 or more times
+?           Question Mark        0 or 1 time
+{n}         Exact Quantity       Exactly n times
+{n,}        Minimum Quantity     At least n times
+{n,m}       Range                n to m times
+
+
+2. CHARACTER CLASSES
+------------------------------------------------------------
+
+Pattern     Meaning
+------------------------------------------------------------
+[abc]       Matches a, b, or c
+[^abc]      Matches anything except a, b, or c
+[a-z]       Lowercase letters (a to z)
+[A-Z]       Uppercase letters (A to Z)
+[0-9]       Digits (0 to 9)
+[a-zA-Z]    Any English letter
+[a-zA-Z0-9] Letters or digits
+
+
+3. SPECIAL CHARACTER CLASSES
+------------------------------------------------------------
+
+Pattern     Meaning
+------------------------------------------------------------
+\d          Any digit (0-9)
+\D          Any non-digit
+\w          Word character (letter, digit, underscore)
+\W          Non-word character
+\s          Whitespace (space, tab, newline)
+\S          Non-whitespace
+\b          Word boundary
+\B          Not a word boundary
+
+
+4. GROUPS AND ALTERNATIVES
+------------------------------------------------------------
+
+Pattern     Meaning
+------------------------------------------------------------
+(abc)       Group characters together
+a|b         a OR b
+(a|b)       Group with OR
+(?:abc)     Non-capturing group
+
+
+5. QUANTIFIERS
+------------------------------------------------------------
+
+Pattern     Meaning                 Example
+------------------------------------------------------------
+*           0 or more              a*
++           1 or more              a+
+?           0 or 1                 a?
+{3}         Exactly 3              a{3}
+{3,}        At least 3             a{3,}
+{3,5}       3 to 5                 a{3,5}
+
+
+6. COMMON VALIDATION PATTERNS
+------------------------------------------------------------
+
+Purpose                 Regex Pattern
+------------------------------------------------------------
+Only digits             ^[0-9]+$
+Only alphabets          ^[A-Za-z]+$
+10-digit mobile         ^[0-9]{10}$
+6-digit PIN             ^[0-9]{6}$
+Username                ^[A-Za-z0-9_]+$
+Decimal number          ^\d+\.\d+$
+Minimum 8 characters    ^.{8,}$
+
+Email:
+^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$
+
+
+7. IMPORTANT EXAMPLES
+------------------------------------------------------------
+
+Pattern: ^\d{10}$
+
+Meaning:
+^       -> Start of string
+\d      -> Digit
+{10}    -> Exactly 10 digits
+$       -> End of string
+
+Example:
+9876543210       -> MATCH
+987654321        -> NO MATCH
+
+
+Pattern: ^[A-Za-z]+$
+
+Meaning:
+^           -> Start
+[A-Za-z]    -> English alphabet
++           -> One or more characters
+$           -> End
+
+Example:
+Swapnil      -> MATCH
+Swapnil123   -> NO MATCH
+
+
+Pattern: ^\d+$
+
+Meaning:
+^       -> Start
+\d      -> Digit
++       -> One or more
+$       -> End
+
+Example:
+12345    -> MATCH
+123abc   -> NO MATCH
+
+
+8. MOST IMPORTANT PATTERNS TO REMEMBER
+------------------------------------------------------------
+
+.       -> Any character
+^       -> Start
+$       -> End
+*       -> 0 or more
++       -> 1 or more
+?       -> 0 or 1
+{n}     -> Exactly n
+{n,m}   -> n to m
+[]      -> Character set
+[^]     -> NOT in character set
+\d      -> Digit
+\D      -> Non-digit
+\w      -> Word character
+\W      -> Non-word character
+\s      -> Whitespace
+\S      -> Non-whitespace
+()      -> Group
+|       -> OR
+\b      -> Word boundary
+
+
+============================================================
+                    END OF REGEX NOTES
+============================================================
+'''
