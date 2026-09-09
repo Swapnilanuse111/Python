@@ -1,0 +1,37 @@
+import tkinter
+->tkinter is a inbuilt python library for GUI components and 
+wigdets.
+-> In this library there already GUI components available 
+which allow users to create desktop application using windows.
+-> Unlike in html,css,js users do not have to create 
+components from scratch, users can directly use the 
+inbuilt wigdets to create GUI.
+
+root=tk.Tk()
+
+Tk()-> It is an inbuilt class in tkinter module which is 
+used to create a new window.
+root-> root acts as a variable storing the address of Tk()
+object.
+
+root.geometry("500x500")
+
+geometry()-> It sets the resolution of the window w.r.t
+width and height of the frame.
+
+root.mainloop()-> It acts as a manager/controller which 
+is responsible for executing the acutal GUI code without
+mainloop() the cdoe will be incomplete.
+
+tk.Label(root,text="Welcome to Ecomm Application",font=("Arial",25)).pack()
+
+Label() -> It is used to create a text lable on window
+which can be used for other wigdets as well.
+-> It contains parameter of window to decide on which 
+window the lable should be applied.
+font-> This parameter decides in which style and size the
+labels will be provided.
+-> pack() is used to confirm the wigdets on parent windows.
+
+
+
