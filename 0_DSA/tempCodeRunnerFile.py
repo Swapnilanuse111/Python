@@ -1,2 +1,0 @@
-
-smallest=0
