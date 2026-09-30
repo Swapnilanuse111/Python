@@ -5,9 +5,8 @@ for fast in range(1,len(l)): #Here We Do Not Need To Provide The len(l)-1 becous
         
 
 
-
 #     if l[slow]!=l[fast]:
-#         slow=slow+1
+#        slow=slow+1
 
 #         l[slow]=l[fast]
 # print(l[:slow+1])
